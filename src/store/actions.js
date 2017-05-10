@@ -1,4 +1,6 @@
 export const CHART_1 = 'CHART_1';
+export const RECEIVED_WEBSOCKET = 'RECEIVED_WEBSOCKET';
+
 
 export function get_random_data () {
     return {
@@ -15,3 +17,9 @@ export function get_random_data () {
     }
 }
 
+export function push_update_from_websocket(socket_message){
+    return {
+        type: RECEIVED_WEBSOCKET,
+        message: socket_message
+    }
+}

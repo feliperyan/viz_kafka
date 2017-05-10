@@ -4,6 +4,7 @@ import './App.css';
 
 import BarChartContainer from './containers/BarChartContainer';
 import SimpleButton from './containers/SimpleButton';
+import SocketComponent from './containers/SocketComponent';
 
 class App extends Component {
     render() {
@@ -21,7 +22,8 @@ class App extends Component {
 
                 <BarChartContainer />
                 <SimpleButton />
-            
+                <SocketComponent />
+
             </div>
         );
 }

@@ -1,5 +1,5 @@
 import Immutable from 'seamless-immutable';
-import {CHART_1} from './actions';
+import { CHART_1, RECEIVED_WEBSOCKET } from './actions';
 
 const initialState = Immutable(
     {
@@ -33,6 +33,8 @@ const data_store = (state = initialState, action = {}) => {
             console.log(action.data);
             console.log('got action');
             return state.merge({data_chart_1: action.new_data});    
+        case RECEIVED_WEBSOCKET:
+            console.log('RECEIVED_WEBSOCKET action kicked off and was captured by the reducer');
         default:
             console.log(state);
             console.log('default...');
