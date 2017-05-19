@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import BarChart from '../components/BarChart';
+import BarChartComponent from '../components/BarChart';
 import { get_chart_1_selector } from '../store/reducer';
 
 
@@ -10,6 +10,6 @@ const mapStateToProps = (state) => {
     }
 }
 
-const BarChartContainer = connect(mapStateToProps)(BarChart);
+const BarChartContainer = connect(mapStateToProps)(BarChartComponent);
 
 export default BarChartContainer;
